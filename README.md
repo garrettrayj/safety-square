@@ -5,4 +5,5 @@ Safety Square
 
 A simple app for interpreting NFPA 704 signs, also known as safety squares, fire diamonds, or hazard diamonds.
 
-<img src="Screenshot.png" alt="Screenshot" width="430" height="932" />
+<kbd><img src="Screenshot.png" alt="Screenshot" width="320" height="auto" /></kbd>
+
