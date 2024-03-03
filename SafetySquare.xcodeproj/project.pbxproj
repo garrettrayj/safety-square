@@ -74,6 +74,7 @@
 		686664FD2B93A3E70010129F /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		686664FE2B94E1260010129F /* Bundle+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+Extensions.swift"; sourceTree = "<group>"; };
 		686665002B94F3400010129F /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		6866653B2B95114F0010129F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +128,7 @@
 		686664B02B8E520F0010129F /* SafetySquare */ = {
 			isa = PBXGroup;
 			children = (
+				6866653B2B95114F0010129F /* Info.plist */,
 				686664DE2B8E53050010129F /* Content */,
 				686664B52B8E52100010129F /* Assets.xcassets */,
 				686664FE2B94E1260010129F /* Bundle+Extensions.swift */,
@@ -482,6 +484,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SafetySquare/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "Safety Square";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2024 Garrett Johnson";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
@@ -522,6 +525,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SafetySquare/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "Safety Square";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2024 Garrett Johnson";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
