@@ -1,4 +1,5 @@
 <img src="SafetySquare/Assets.xcassets/AppIcon.appiconset/icon_128x128@2x.png" alt="App Icon" width="128" height="128" align="center" />
+
 Safety Square
 =============
 
