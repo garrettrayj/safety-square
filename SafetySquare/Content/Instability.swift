@@ -15,27 +15,27 @@ enum Instability: Int, HazardProtocol {
     case two   = 2
     case three = 3
     case four  = 4
-    
+
     var color: Color {
         Color("HazardYellow")
     }
-    
+
     var hazardTypeName: Text {
         Text("Instability")
     }
-    
+
     var hazardTypeSymbol: String {
         "burst"
     }
-    
+
     var pictogram: Text? {
         nil
     }
-    
+
     var code: Text {
         Text("\(self.rawValue)")
     }
-    
+
     var title: Text {
         switch self {
         case .zero:
@@ -50,7 +50,7 @@ enum Instability: Int, HazardProtocol {
             Text("May Detonate")
         }
     }
-    
+
     var information: Text {
         switch self {
         case .zero:
@@ -86,7 +86,7 @@ enum Instability: Int, HazardProtocol {
         case .three:
             Text("""
             Capable of detonation or explosive decomposition but requires a strong initiating source, must be heated under confinement before initiation, reacts explosively with water, or will detonate if severely shocked.
-            
+
             Examples:
 
             - Ammonium nitrate
@@ -109,4 +109,3 @@ enum Instability: Int, HazardProtocol {
         }
     }
 }
-

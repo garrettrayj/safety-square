@@ -14,7 +14,7 @@ struct Overview: View {
     @Binding var flammability: Flammability
     @Binding var instability: Instability
     @Binding var specialHazard: SpecialHazard
-    
+
     var body: some View {
         VStack(spacing: 4) {
             NavigationLink {
@@ -45,18 +45,17 @@ struct Overview: View {
     }
 }
 
-
 struct Overview_Previews: PreviewProvider {
     static var previews: some View {
         StatefulView()
     }
-    
-    private struct StatefulView : View {
+
+    private struct StatefulView: View {
         @State var healthHazard: HealthHazard = .zero
         @State var flammability: Flammability = .zero
         @State var instability: Instability = .zero
         @State var specialHazard: SpecialHazard = .notApplicable
-        
+
         var body: some View {
             Overview(
                 healthHazard: $healthHazard,

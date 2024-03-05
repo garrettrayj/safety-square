@@ -14,14 +14,14 @@ struct Placard: View {
     @Binding var flammability: Flammability
     @Binding var instability: Instability
     @Binding var specialHazard: SpecialHazard
-    
+
     var body: some View {
         ZStack {
             VStack {
                 PlacardDivision(selection: $flammability)
                 PlacardDivision(selection: $specialHazard)
             }
-            
+
             HStack {
                 PlacardDivision(selection: $healthHazard)
                 PlacardDivision(selection: $instability)
@@ -39,13 +39,13 @@ struct Placard_Previews: PreviewProvider {
     static var previews: some View {
         StatefulView()
     }
-    
-    private struct StatefulView : View {
+
+    private struct StatefulView: View {
         @State var healthHazard: HealthHazard = .zero
         @State var flammability: Flammability = .zero
         @State var instability: Instability = .zero
         @State var specialHazard: SpecialHazard = .notApplicable
-        
+
         var body: some View {
             Placard(
                 healthHazard: $healthHazard,

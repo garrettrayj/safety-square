@@ -20,7 +20,6 @@ struct SafetySquareApp: App {
         #else
         WindowGroup {
             ContentView()
-                
         }
         #endif
     }

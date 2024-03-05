@@ -11,10 +11,10 @@ import SwiftUI
 
 struct PlacardDivision<HazardType: HazardProtocol>: View {
     @Binding var selection: HazardType
-    
+
     @State private var index: Int = 0
     @State private var offset: CGFloat = 0
-    
+
     var body: some View {
         GeometryReader { geometry in
             Button {
@@ -80,12 +80,11 @@ struct PlacardDivision<HazardType: HazardProtocol>: View {
         }
         .aspectRatio(1, contentMode: .fit)
     }
-    
+
     private var segments: [HazardType] {
         var segments = Array(HazardType.allCases)
-        
+
         segments.append(HazardType.allCases.first!)
-        
 
         return segments
     }
@@ -95,13 +94,12 @@ struct PlacardDivision_Previews: PreviewProvider {
     static var previews: some View {
         StatefulView()
     }
-    
-    private struct StatefulView : View {
+
+    private struct StatefulView: View {
         @State var selection: Flammability = .zero
-        
+
         var body: some View {
             PlacardDivision(selection: $selection)
         }
     }
 }
-

@@ -11,7 +11,7 @@ import SwiftUI
 
 struct HazardHeader<HazardType: HazardProtocol>: View {
     @Binding var hazard: HazardType
-    
+
     var body: some View {
         VStack(alignment: .leading) {
             Grid {
@@ -21,7 +21,7 @@ struct HazardHeader<HazardType: HazardProtocol>: View {
                 }
                 .font(.headline)
                 .imageScale(.small)
-                
+
                 GridRow {
                     Group {
                         if type(of: hazard) == SpecialHazard.self {
@@ -32,7 +32,7 @@ struct HazardHeader<HazardType: HazardProtocol>: View {
                     }
                     .font(.title.weight(.heavy))
                     .monospacedDigit()
-                    
+
                     hazard.title
                         .font(.title2.weight(.bold))
                         .frame(maxWidth: .infinity, alignment: .leading)

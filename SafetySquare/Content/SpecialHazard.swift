@@ -27,15 +27,15 @@ enum SpecialHazard: Int, HazardProtocol {
     var color: Color {
         .white
     }
-    
+
     var hazardTypeName: Text {
         Text("Special Hazard")
     }
-    
+
     var hazardTypeSymbol: String {
         "scope"
     }
-    
+
     var pictogram: Text? {
         switch self {
         case .bio:
@@ -48,7 +48,7 @@ enum SpecialHazard: Int, HazardProtocol {
             nil
         }
     }
-    
+
     var code: Text {
         switch self {
         case .notApplicable:
@@ -75,7 +75,7 @@ enum SpecialHazard: Int, HazardProtocol {
             Text("CRY")
         }
     }
-    
+
     var title: Text {
         switch self {
         case .notApplicable:
@@ -102,7 +102,7 @@ enum SpecialHazard: Int, HazardProtocol {
             Text("Cryogenic")
         }
     }
-    
+
     var information: Text {
         switch self {
         case .notApplicable:
@@ -206,5 +206,3 @@ enum SpecialHazard: Int, HazardProtocol {
         }
     }
 }
-
-

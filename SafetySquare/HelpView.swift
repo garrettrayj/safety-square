@@ -11,10 +11,9 @@ import SwiftUI
 
 struct HelpView: View {
     @Environment(\.openURL) private var openURL
-    
+
     var body: some View {
         Form {
-            
             Section {
                 VStack(alignment: .leading, spacing: 12) {
                     Text("1. Select Hazards").font(.headline)
@@ -27,7 +26,7 @@ struct HelpView: View {
             } header: {
                 Text("Usage")
             }
-            
+
             Section {
                 LabeledContent {
                     Text("\(Bundle.main.releaseVersionNumber) (\(Bundle.main.buildVersionNumber))")

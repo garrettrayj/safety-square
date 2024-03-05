@@ -10,9 +10,8 @@
 import SwiftUI
 
 struct HazardInfo<HazardType: HazardProtocol>: View {
-    
     @Binding var hazard: HazardType
-    
+
     var body: some View {
         VStack(spacing: 0) {
             ZStack {
@@ -24,9 +23,9 @@ struct HazardInfo<HazardType: HazardProtocol>: View {
             .padding()
             .background(.thickMaterial)
             .zIndex(1)
-            
+
             Divider()
-            
+
             ScrollView {
                 VStack(alignment: .leading) {
                     hazard.information

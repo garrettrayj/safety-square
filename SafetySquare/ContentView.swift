@@ -10,18 +10,18 @@
 import SwiftUI
 
 struct ContentView: View {
-    @AppStorage("flammability") 
+    @AppStorage("flammability")
     private var flammability: Flammability = .zero
-    
+
     @AppStorage("health-hazard")
     private var healthHazard: HealthHazard = .zero
-    
+
     @AppStorage("instability")
     private var instability: Instability = .zero
-    
+
     @AppStorage("special-hazard")
     private var specialHazard: SpecialHazard = .notApplicable
-    
+
     var body: some View {
         NavigationStack {
             ViewThatFits(in: .horizontal) {
@@ -43,7 +43,7 @@ struct ContentView: View {
                     .frame(maxWidth: 400)
                     Spacer(minLength: 0)
                 }
-                
+
                 VStack(alignment: .center, spacing: 0) {
                     Spacer(minLength: 0)
                     Placard(

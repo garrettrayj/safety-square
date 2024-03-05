@@ -15,27 +15,27 @@ enum HealthHazard: Int, HazardProtocol {
     case two   = 2
     case three = 3
     case four  = 4
-    
+
     var color: Color {
         Color("HazardCyan")
     }
-    
+
     var hazardTypeName: Text {
         Text("Health Hazard")
     }
-    
+
     var hazardTypeSymbol: String {
         "stethoscope"
     }
-    
+
     var pictogram: Text? {
         nil
     }
-    
+
     var code: Text {
         Text("\(self.rawValue)")
     }
-    
+
     var title: Text {
         switch self {
         case .zero:
@@ -50,7 +50,7 @@ enum HealthHazard: Int, HazardProtocol {
             Text("Deadly")
         }
     }
-    
+
     var information: Text {
         switch self {
         case .zero:
@@ -116,4 +116,3 @@ enum HealthHazard: Int, HazardProtocol {
         }
     }
 }
-

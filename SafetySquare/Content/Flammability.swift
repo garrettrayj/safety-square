@@ -15,27 +15,27 @@ enum Flammability: Int, HazardProtocol {
     case two   = 2
     case three = 3
     case four  = 4
-    
+
     var color: Color {
         Color("HazardRed")
     }
-    
+
     var hazardTypeName: Text {
         Text("Flammability")
     }
-    
+
     var hazardTypeSymbol: String {
         "flame"
     }
-    
+
     var pictogram: Text? {
         nil
     }
-    
+
     var code: Text {
         Text("\(self.rawValue)")
     }
-    
+
     var title: Text {
         switch self {
         case .zero:
@@ -50,7 +50,7 @@ enum Flammability: Int, HazardProtocol {
             Text("Flash Point Below \(Measurement(value: 73, unit: UnitTemperature.fahrenheit).temperatureFormatted())")
         }
     }
-    
+
     var information: Text {
         switch self {
         case .zero:
