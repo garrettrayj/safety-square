@@ -5,8 +5,8 @@ Safety Square
 
 Quickly interpret NFPA 704 signs, also known as safety squares, fire diamonds, or hazard diamonds.
 
-<img src="screenshot.png" alt="Screenshot" width="280" height="auto" />
+<img src="screenshot.png" alt="Screenshot" width="607" height="auto" />
 
 Tap areas on the diamond to change hazards. See additional information by tapping the hazard description.
 
-<a href=""><img src="https://devsci.net/images/download-on-the-app-store-black.svg" alt="Download on the App Store" width="216" height="72" /></a>
+<a href=""><img src="https://devsci.net/images/download-on-the-app-store-black.svg" alt="Download on the App Store" width="179" height="60" /></a>
